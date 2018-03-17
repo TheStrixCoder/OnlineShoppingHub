@@ -7,9 +7,14 @@
             android:icon="@drawable/categories"
             android:title="Categories" />
         <item
-            android:id="@+id/topsites"
-            android:icon="@drawable/top_sites"
-            android:title="Top Sites" />
+            android:id="@+id/clickImage"
+            android:icon="@drawable/camera_img"
+            android:title="Click and Shop! (from image)" />
+        <item
+            android:id="@+id/clickText"
+            android:icon="@drawable/camera_text"
+            android:title="Click and Shop! (from text)" />
+
         <item
             android:id="@+id/wishlist"
             android:icon="@drawable/wishlistn"

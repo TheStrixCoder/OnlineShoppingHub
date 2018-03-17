@@ -4,7 +4,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 
-import android.os.Build;
 import android.os.Bundle;
 
 
@@ -80,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         textView= (TextView) header.findViewById(R.id.userName);
         textView.setText(output);
         showFragmentScreen(R.id.categories);
+
     }
 
     @Override
@@ -151,13 +151,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new Categories();
                 break;
 
-            case R.id.topsites:
-                fragment = new TopSites();
+            case R.id.clickImage:
+                fragment = new CaptureAndFind();
                 break;
             case R.id.feedback:
                 fragment = new FeedBack();
                 break;
-
+            case R.id.clickText:
+                fragment=new CaptureAndFindText();
+                break;
             case R.id.contact_us:
                 fragment = new ContactUs();
                 break;

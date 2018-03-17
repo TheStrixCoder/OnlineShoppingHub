@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import java.util.ArrayList;
-import java.util.Currency;
 
 /**
  * Created by vicky on 2/3/18.
@@ -19,6 +18,7 @@ public class MyDatabase extends SQLiteOpenHelper {
     private static final int Version=1;
     public MyDatabase(Context context) {
         super(context, DB_NAME, null, Version);
+
     }
 
     @Override
@@ -37,7 +37,7 @@ public class MyDatabase extends SQLiteOpenHelper {
         ContentValues cv=new ContentValues();
         cv.put("URL",url.getUrl());
 
-      //  Log.i("Main","Going into db:"+url.getUrl());
+      //  Log.i("Andar se called","Going into db:"+url.getUrl());
         database.insert("WISHLIST",null,cv);
     }
 
@@ -55,10 +55,9 @@ public class MyDatabase extends SQLiteOpenHelper {
         int urlIndex=cursor.getColumnIndex("URL");
         while (!cursor.isAfterLast()){
             String url=cursor.getString(urlIndex);
-
             URL urlObj=new URL();
             urlObj.setUrl(url);
-            Log.i("Main","From db:"+url);
+            Log.i("Get part","From db:"+url);
             urls.add(urlObj);
             cursor.moveToNext();
         }

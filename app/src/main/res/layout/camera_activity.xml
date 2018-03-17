@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Click to capture an image"
+        android:visibility="visible" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:src="@drawable/camera_preview"
+        app:riv_corner_radius="30dip"
+        android:layout_height="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#111111"
+        app:riv_mutate_background="true" />
+
+    <Button
+        android:id="@+id/proceedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Decode Image!"
+        android:visibility="gone" />
+</RelativeLayout>
+
