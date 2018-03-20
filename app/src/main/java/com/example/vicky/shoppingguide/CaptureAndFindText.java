@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -53,7 +54,7 @@ import java.util.ArrayList;
  */
 
 @SuppressLint("ValidFragment")
-class CaptureAndFindText extends Fragment {
+public class CaptureAndFindText extends Fragment {
     public VisionServiceClient visionServiceClient= new VisionServiceRestClient("7b40922bda1a4635b9697dfb4dbf5daa","https://westcentralus.api.cognitive.microsoft.com/vision/v1.0");
     Button clickImage,proceed;
     RoundedImageView preview;
@@ -68,6 +69,7 @@ class CaptureAndFindText extends Fragment {
     String flipkart = "https://www.flipkart.com/search?as=off&as-show=on&count=40&otracker=start";
     String amazon="https://www.amazon.in/s/ref=";
     String snapdeal="https://www.snapdeal.com/search?keyword=";
+    ProgressDialog progressDialog;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -149,6 +151,9 @@ class CaptureAndFindText extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            progressDialog=new ProgressDialog(getContext());
+            progressDialog.setTitle("Processing Results...");
+            progressDialog.show();
             // mEditText.setText("Describing...");
         }
 
@@ -179,7 +184,7 @@ class CaptureAndFindText extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
+            progressDialog.dismiss();
             if(e!=null){
                 Toast.makeText(getContext(),"Error: "+e.getMessage(),Toast.LENGTH_SHORT).show();
                 this.e=null;
@@ -252,5 +257,7 @@ class CaptureAndFindText extends Fragment {
         }).show();
 
     }
+
+
 }
 

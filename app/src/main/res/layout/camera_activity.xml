@@ -14,7 +14,10 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Click to capture an image"
-        android:visibility="visible" />
+        android:background="@drawable/roundedbutton"
+        android:visibility="visible"
+
+        />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView4"

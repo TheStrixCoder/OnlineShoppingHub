@@ -204,6 +204,7 @@ public class Mobiles extends AppCompatActivity implements AdapterView.OnItemSele
         snapdeal="https://www.snapdeal.com/search?keyword=";
         startActivity(i);
 
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

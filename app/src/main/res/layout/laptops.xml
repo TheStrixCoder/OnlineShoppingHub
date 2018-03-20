@@ -48,51 +48,51 @@
             android:id="@+id/laptopbrandName"
             android:visibility="gone"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reason for Use"
-            android:textSize="20dp"
-            android:layout_margin="15dp"
-            android:textColor="#000000"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/laptopspeciality"
-            android:visibility="gone"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Reason for Use"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:textColor="#000000"/>-->
+        <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:id="@+id/laptopspeciality"-->
+            <!--android:visibility="gone"/>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Screen Size"
-            android:textSize="20dp"
-            android:textColor="#000000"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/screensizeLaptop"
-            android:visibility="gone"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:text="Screen Size"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000000"/>-->
+        <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:id="@+id/screensizeLaptop"-->
+            <!--android:visibility="gone"/>-->
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Touch Screen"
-            android:textSize="20dp"
-            android:textColor="#000000"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/touchscreenLaptop"
-            android:visibility="gone"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:text="Touch Screen"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000000"/>-->
+        <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:id="@+id/touchscreenLaptop"-->
+            <!--android:visibility="gone"/>-->
 
         <TextView
             android:layout_width="match_parent"
@@ -143,20 +143,20 @@
             android:visibility="gone"/>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Processor Brand"
-            android:textSize="20dp"
-            android:textColor="#000000"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/processorbrandLaptop"
-            android:visibility="gone"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:text="Processor Brand"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#000000"/>-->
+        <!--<Spinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:id="@+id/processorbrandLaptop"-->
+            <!--android:visibility="gone"/>-->
 
 
 
@@ -192,6 +192,7 @@
             android:layout_height="wrap_content"
             android:text="Filter it out!"
             android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
             android:onClick="searchLaptop"/>
 
 

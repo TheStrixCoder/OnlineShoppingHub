@@ -121,6 +121,7 @@
             android:layout_height="wrap_content"
             android:text="Filter it out!"
             android:layout_gravity="center"
+            android:background="@drawable/roundedbutton"
             android:onClick="searchMobiles"/>
 
 

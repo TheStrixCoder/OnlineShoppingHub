@@ -39,6 +39,7 @@
         <activity android:name=".FirstLaunchApplication"/>
         <activity android:name=".SingleWebView"/>
         <activity android:name=".SmartWearables"/>
+        <activity android:name="ComputerAccesories"/>
     </application>
 
 </manifest>

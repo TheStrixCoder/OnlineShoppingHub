@@ -3,6 +3,7 @@ package com.example.vicky.shoppingguide;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -61,6 +62,7 @@ public class CaptureAndFind extends Fragment{
     String flipkart = "https://www.flipkart.com/search?as=off&as-show=on&count=40&otracker=start";
     String amazon="https://www.amazon.in/s/ref=";
     String snapdeal="https://www.snapdeal.com/search?keyword=";
+    ProgressDialog progressDialog;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -137,6 +139,9 @@ public class CaptureAndFind extends Fragment{
         protected void onPreExecute() {
             super.onPreExecute();
            // mEditText.setText("Describing...");
+            progressDialog=new ProgressDialog(getContext());
+            progressDialog.setTitle("Please wait...");
+            progressDialog.show();
         }
 
         @Override
@@ -165,7 +170,7 @@ public class CaptureAndFind extends Fragment{
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
+            progressDialog.dismiss();
             if(e!=null){
                 Toast.makeText(getContext(),"Error: "+e.getMessage(),Toast.LENGTH_SHORT).show();
                 this.e=null;

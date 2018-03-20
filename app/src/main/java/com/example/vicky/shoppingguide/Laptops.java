@@ -55,7 +55,7 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
 
 //brand
         dropdownBrand = (Spinner) findViewById(R.id.laptopbrandName);
-        String[] laptopBrand = {"Brand independent", "Dell", "MAC BOOK", "HP", "ACER", "LENEVO", "ALIEN WARE", "OTHER BRANDs"};
+        String[] laptopBrand = {"Brand independent", "dell", "mac book", "hp", "acer", "lenevo", "OTHER BRANDs"};
         ArrayAdapter<String> laptopbrandarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptopBrand);
         laptopbrandarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -63,37 +63,37 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
         dropdownBrand.setOnItemSelectedListener(this);
 
 //Speciality
-        dropdownspeciality = (Spinner) findViewById(R.id.laptopspeciality);
-        String[] laptopspeciality = {"Browsing and email", "Bussiness", "Gaming", "High performance", "Light weight"};
-        ArrayAdapter<String> laptopspecialityarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptopspeciality);
-      laptopspecialityarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        dropdownspeciality = (Spinner) findViewById(R.id.laptopspeciality);
+//        String[] laptopspeciality = {"Browsing and email", "Bussiness", "Gaming", "High performance", "Light weight"};
+//        ArrayAdapter<String> laptopspecialityarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptopspeciality);
+//      laptopspecialityarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//        dropdownspeciality.setAdapter(laptopspecialityarrayAdapter);
+//        dropdownspeciality.setOnItemSelectedListener(this);
+//
+//        //screensizelaptop
+//        dropdownscreensize = (Spinner) findViewById(R.id.screensizeLaptop);
+//        String[] laptopscreensize = {"No specific size", "15 inch-15.9 inch", "14 inch-14.9 inch", "13 inch-13.9 inch", "12 inch-12.9inch", "16 inch-17.9inch", "Below 12 inch", "Above 20 inch"};
+//        ArrayAdapter<String> laptopscreensizearrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptopscreensize);
+//        laptopscreensizearrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//        dropdownscreensize.setAdapter(laptopscreensizearrayAdapter);
+//        dropdownscreensize.setOnItemSelectedListener(this);
 
-        dropdownspeciality.setAdapter(laptopspecialityarrayAdapter);
-        dropdownspeciality.setOnItemSelectedListener(this);
 
-        //screensizelaptop
-        dropdownscreensize = (Spinner) findViewById(R.id.screensizeLaptop);
-        String[] laptopscreensize = {"No specific size", "15 inch-15.9 inch", "14 inch-14.9 inch", "13 inch-13.9 inch", "12 inch-12.9inch", "16 inch-17.9inch", "Below 12 inch", "Above 20 inch"};
-        ArrayAdapter<String> laptopscreensizearrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptopscreensize);
-        laptopscreensizearrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        dropdownscreensize.setAdapter(laptopscreensizearrayAdapter);
-        dropdownscreensize.setOnItemSelectedListener(this);
-
-
-//touchscreenlaptop
-        dropdowntouch = (Spinner) findViewById(R.id.touchscreenLaptop);
-        String[] laptoptouch = {"Doesn't matter", "Yes", "No"};
-        ArrayAdapter<String> laptoptouchscreenarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptoptouch);
-        laptoptouchscreenarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        dropdowntouch.setAdapter(laptoptouchscreenarrayAdapter);
-        dropdowntouch.setOnItemSelectedListener(this);
-
+////touchscreenlaptop
+//        dropdowntouch = (Spinner) findViewById(R.id.touchscreenLaptop);
+//        String[] laptoptouch = {"Doesn't matter", "Yes", "No"};
+//        ArrayAdapter<String> laptoptouchscreenarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, laptoptouch);
+//        laptoptouchscreenarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//        dropdowntouch.setAdapter(laptoptouchscreenarrayAdapter);
+//        dropdowntouch.setOnItemSelectedListener(this);
+//
 
 //ram
         dropdownRAM = (Spinner) findViewById(R.id.ramLaptop);
-        String[] ram = {"2GB", "4GB", "8GB", "16GB"};
+        String[] ram = {"2gb", "4gb", "8gb", "16gb"};
         ArrayAdapter<String> laptopramarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, ram);
         laptopbrandarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -101,7 +101,7 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
         dropdownRAM.setOnItemSelectedListener(this);
 //internal
         dropdownInternal = (Spinner) findViewById(R.id.internalLaptop);
-        String[] internal = {"256GB", "512GB", "1TB", "2TB"};
+        String[] internal = {"256gb", "512gb", "1tb", "2tb"};
         ArrayAdapter<String> laptopinternalarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, internal);
         laptopinternalarrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -110,7 +110,7 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
 
 //graphics memory
         dropdownGraphics = (Spinner) findViewById(R.id.laptopgraphic);
-        String[] graphics = {"Integrated Graphics Card", "2 GB", "4GB", "8GB"};
+        String[] graphics = {"Integrated Graphics Card", "2gb", "4gb", "8gb"};
         ArrayAdapter<String> laptopgraphicsarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, graphics);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -119,7 +119,7 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
 
 //processor type
         dropdownProcessor = (Spinner) findViewById(R.id.Laptopprocessor);
-        String[] processor = {"Core i3", "Core i5", "Core i7", "Pentium Quad Core"};
+        String[] processor = {"core i3", "core i5", "core i7", "Pentium Quad Core"};
         ArrayAdapter<String> laptopprocessorarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, processor);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -129,14 +129,14 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
 
 //processor brand
 
-        dropdownprocessorbrand = (Spinner) findViewById(R.id.processorbrandLaptop);
-        String[] processorbrand = {"Intel", "AMD", "NVIDIA", "ARM"};
-        ArrayAdapter<String> laptopprocessorbrandarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, processorbrand);
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        dropdownprocessorbrand.setAdapter(laptopprocessorbrandarrayAdapter);
-        dropdownprocessorbrand.setOnItemSelectedListener(this);
-
+//        dropdownprocessorbrand = (Spinner) findViewById(R.id.processorbrandLaptop);
+//        String[] processorbrand = {"Intel", "AMD", "NVIDIA", "ARM"};
+//        ArrayAdapter<String> laptopprocessorbrandarrayAdapter = new ArrayAdapter<>(Laptops.this, R.layout.spinner_row, processorbrand);
+//        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//
+//        dropdownprocessorbrand.setAdapter(laptopprocessorbrandarrayAdapter);
+//        dropdownprocessorbrand.setOnItemSelectedListener(this);
+//
 
 //sort
         dropdownsort = (Spinner) findViewById(R.id.sortbyLaptop);
@@ -160,10 +160,9 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
                     dropdownBrand.setVisibility(View.GONE);
                     dropdownRAM.setVisibility(View.GONE);
                     dropdownInternal.setVisibility(View.GONE);
-                    dropdownspeciality.setVisibility(View.GONE);
-                    dropdownscreensize.setVisibility(View.GONE);
-                    dropdowntouch.setVisibility(View.GONE);
-                    dropdownprocessorbrand.setVisibility(View.GONE);
+//                    dropdownspeciality.setVisibility(View.GONE);
+//                    dropdowntouch.setVisibility(View.GONE);
+//                    dropdownprocessorbrand.setVisibility(View.GONE);
                     dropdownGraphics.setVisibility(View.GONE);
                     dropdownProcessor.setVisibility(View.GONE);
 
@@ -174,10 +173,10 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
                     dropdownBrand.setVisibility(View.VISIBLE);
                     dropdownRAM.setVisibility(View.VISIBLE);
                     dropdownInternal.setVisibility(View.VISIBLE);
-                    dropdownspeciality.setVisibility(View.VISIBLE);
-                    dropdownscreensize.setVisibility(View.VISIBLE);
-                    dropdowntouch.setVisibility(View.VISIBLE);
-                    dropdownprocessorbrand.setVisibility(View.VISIBLE);
+//                    dropdownspeciality.setVisibility(View.VISIBLE);
+//                    dropdownscreensize.setVisibility(View.VISIBLE);
+//                    dropdowntouch.setVisibility(View.VISIBLE);
+//                    dropdownprocessorbrand.setVisibility(View.VISIBLE);
                     dropdownGraphics.setVisibility(View.VISIBLE);
                     dropdownProcessor.setVisibility(View.VISIBLE);
                         flag=1;
@@ -202,26 +201,27 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
                 break;
 
 
-            case R.id.laptopspeciality:
-                speciality = (String) parent.getItemAtPosition(i);
-                break;
+//            case R.id.laptopspeciality:
+//                speciality = (String) parent.getItemAtPosition(i);
+//                break;
 
-            case R.id.touchscreenLaptop:
-                if (((String) parent.getItemAtPosition(i)).equals("Yes")) {
-                    touch = "Touch screen";
-                }
-                break;
-            case R.id.screenSize:
-                screen = (String) parent.getItemAtPosition(i);
-                break;
+//            case R.id.touchscreenLaptop:
+//                if (((String) parent.getItemAtPosition(i)).equals("Yes")) {
+//                    touch = "Touch screen";
+//                }
+//                break;
+//
+//            case R.id.screenSize:
+//                screen = (String) parent.getItemAtPosition(i);
+//                break;
 
             case R.id.Laptopprocessor:
                 Processor = (String) parent.getItemAtPosition(i);
                 break;
-
-            case R.id.processorbrandLaptop:
-                processorbrand = (String) parent.getItemAtPosition(i);
-                break;
+//
+//            case R.id.processorbrandLaptop:
+//                processorbrand = (String) parent.getItemAtPosition(i);
+//                break;
 
             case R.id.sortbyLaptop:
                 sort = (String) parent.getItemAtPosition(i);
@@ -239,10 +239,10 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
             if (flag == 0) {
                 output = editText.getText().toString();
             } else if (flag == 1 && (Brand.equals("Brand independent") ||Brand.equals("OTHER BRANDs"))) {
-                output = " Laptop " + "system_memory" + RAM + internal + " internal " + touch + "touch screen" + screen + " screen_size " + screen + "processor" + Processor + "processor_brand" + processorbrand + "dedicated_graphics_memory" + Graphics + "graphic_processor_name" + graphicbrand;
+                output = " Laptop " + RAM +"ram"+ internal + " hard disk "  + "processor" + Processor +"graphics" + Graphics ;
                 //Toast.makeText(Mobiles.this, output, Toast.LENGTH_LONG).show();
             } else {
-                output = Brand + " Laptop " + "system memory" + RAM + internal + " internal " + touch + "touch screen" + screen + " screen_size " + screen + "processor" + Processor + "processor_brand" + processorbrand + "dedicated_graphics_memory" + Graphics + "graphic_processor_name" + graphicbrand;
+                output = Brand +" Laptop " + RAM +" ram "+ internal + " hard disk "  +  Processor+" processor "  +" graphics " + Graphics ;
                 //Toast.makeText(Mobiles.this, output, Toast.LENGTH_LONG).show();
             }
 
