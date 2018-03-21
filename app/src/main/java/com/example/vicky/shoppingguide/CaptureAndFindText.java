@@ -49,9 +49,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-/**
- * Created by vicky on 15/3/18.
- */
 
 @SuppressLint("ValidFragment")
 public class CaptureAndFindText extends Fragment {

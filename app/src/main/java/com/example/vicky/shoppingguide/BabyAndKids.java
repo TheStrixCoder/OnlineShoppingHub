@@ -9,9 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-/**
- * Created by vicky on 6/10/17.
- */
+
 
 public class BabyAndKids extends AppCompatActivity {
     ActionBar actionBar;

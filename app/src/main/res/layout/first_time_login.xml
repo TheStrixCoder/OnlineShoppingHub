@@ -86,22 +86,16 @@
         android:text="Gender"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
-    <Button
-        android:id="@+id/skipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="48dp"
-        android:layout_toEndOf="@+id/textView3"
-        android:onClick="onSkipClick"
-        android:text="Skip" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/skipButton"
-        android:layout_toEndOf="@+id/skipButton"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/roundedbutton"
         android:onClick="onNextClick"
         android:text="Next!" />
 

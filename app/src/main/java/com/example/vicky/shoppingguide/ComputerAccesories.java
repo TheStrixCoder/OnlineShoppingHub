@@ -13,17 +13,13 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-/**
- * Created by vicky on 6/10/17.
- */
-
 public class ComputerAccesories extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     ActionBar actionBar;
     String flipkart = "https://www.flipkart.com/search?as=off&as-show=on&count=40&otracker=start";
     String amazon="https://www.amazon.in/s/ref=";
     String snapdeal="https://www.snapdeal.com/search?keyword=";
-    String output = "";
+    String output = " ";
     int flag;
     Spinner dropdownMethod,dropdownitem,dropdownbrand, dropdownsort;
     EditText editText;
@@ -41,14 +37,14 @@ public class ComputerAccesories extends AppCompatActivity implements AdapterView
         editText=(EditText)findViewById(R.id.laptopAccessoriesProductDetail);
 
         dropdownitem=(Spinner)findViewById(R.id.LaptopAccesoriesItem);
-        String item[]={"keyboard","mouse","charger","speakers"};
+        String item[]={"keyboard","mouse","charger","speakers","Other Item"};
         ArrayAdapter<String> arrayAdapteritem=new ArrayAdapter<String>(ComputerAccesories.this,R.layout.spinner_row,item);
         arrayAdapteritem.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         dropdownitem.setAdapter(arrayAdapteritem);
         dropdownitem.setOnItemSelectedListener(this);
 
         dropdownbrand=(Spinner)findViewById(R.id.LaptopAccesoriesBrand);
-        String[] brand= {"dell","hp","lenevo"};
+        String[] brand= {"Any brand","dell","hp","lenevo"};
         ArrayAdapter<String> arrayAdapterbrand=new ArrayAdapter<String>(ComputerAccesories.this,R.layout.spinner_row,brand);
         arrayAdapterbrand.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         dropdownbrand.setAdapter(arrayAdapterbrand);
@@ -70,12 +66,14 @@ public class ComputerAccesories extends AppCompatActivity implements AdapterView
     public void onItemSelected(AdapterView<?> parentMA, View view, int i,long l){
 
          switch(parentMA.getId()){
-             case R.id.LaptopAccesoriesBrand:
-                 AccesoriesBrand=(String)parentMA.getItemAtPosition(i);
-                 break;
              case R.id.LaptopAccesoriesItem:
                  Item=(String )parentMA.getItemAtPosition(i);
                  break;
+
+             case R.id.LaptopAccesoriesBrand:
+                 AccesoriesBrand=(String)parentMA.getItemAtPosition(i);
+                 break;
+
              case R.id.sortbyLaptopAccesories:
                  sort=(String)parentMA.getItemAtPosition(i);
                  break;
@@ -89,7 +87,16 @@ public class ComputerAccesories extends AppCompatActivity implements AdapterView
 
     public void searchLaptopAccesories(View view)
     {
-        output=editText.getText().toString()+" "+Item;
+        if(Item.equals("Other Item")) {
+            if (AccesoriesBrand.equals("Any Brand"))
+                output = editText.getText().toString();
+            else
+                output= AccesoriesBrand +" " + editText.getText().toString();
+        }
+        else if(AccesoriesBrand.equals("Any brand") )
+            output= editText.getText().toString()+" "+Item;
+        else
+        output= AccesoriesBrand +" "+editText.getText().toString()+" "+Item;
 
         if(sort.equals("Relevance")){
             flipkart += "&q=" + output;

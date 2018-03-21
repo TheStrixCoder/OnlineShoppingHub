@@ -18,9 +18,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-/**
- * Created by vicky on 3/3/18.
- */
 
 public class SingleWebView extends AppCompatActivity {
     AlertDialog.Builder alertDialog1;

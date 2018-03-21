@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vicky.shoppingguide">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -29,17 +30,17 @@
         <activity android:name=".BooksMore" />
         <activity android:name=".Men" />
         <activity android:name=".Mobiles" />
-        <activity android:name=".MobileAccesories"/>
-        <activity android:name=".Laptops"/>
-
+        <activity android:name=".MobileAccesories" />
+        <activity android:name=".Laptops" />
         <activity
             android:name=".ShoppingActivity"
             android:label="@string/title_activity_shopping"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".FirstLaunchApplication"/>
-        <activity android:name=".SingleWebView"/>
-        <activity android:name=".SmartWearables"/>
-        <activity android:name="ComputerAccesories"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FirstLaunchApplication" />
+        <activity android:name=".SingleWebView" />
+        <activity android:name=".SmartWearables" />
+        <activity android:name=".ComputerAccesories" />
+        <activity android:name=".Speech" />
     </application>
 
 </manifest>

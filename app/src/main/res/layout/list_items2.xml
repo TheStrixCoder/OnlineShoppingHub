@@ -23,9 +23,11 @@
 
         <Button
             android:id="@+id/gotoLink"
-            android:layout_width="197dp"
+            android:layout_width="196dp"
             android:layout_height="wrap_content"
             android:visibility="gone"
+            android:background="@drawable/roundedbutton"
+              android:layout_weight="0.5"
             android:text="Go to link" />
 
         <Button
@@ -34,6 +36,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:visibility="gone"
+        android:layout_weight="0.5"
+
+        android:background="@drawable/roundedbutton"
+
             android:text="Delete" />
         <!--
             <io.github.ponnamkarthik.richlinkpreview.RichLinkViewTelegram

@@ -9,9 +9,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-/**
- * Created by vicky on 2/3/18.
- */
+
 
 public class MyDatabase extends SQLiteOpenHelper {
     private static final String DB_NAME="Wishlist.db";

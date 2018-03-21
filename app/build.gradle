@@ -39,6 +39,8 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
     compile 'com.microsoft.projectoxford:vision:1.0.394'
+    compile 'com.microsoft.projectoxford:speechrecognition:1.2.2'
+
     compile 'com.makeramen:roundedimageview:2.3.0'
 
 }

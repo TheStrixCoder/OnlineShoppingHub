@@ -11,9 +11,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-/**
- * Created by vicky on 4/10/17.
- */
 
 public class Categories extends Fragment {
     GridView gridView;

@@ -17,9 +17,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Created by vicky on 3/3/18.
- */
+
 
 public class WishList extends Fragment {
     ListView listView;

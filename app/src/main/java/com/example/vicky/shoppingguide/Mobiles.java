@@ -14,9 +14,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-/**
- * Created by vicky on 6/10/17.
- */
 
 public class Mobiles extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     String flipkart = "https://www.flipkart.com/search?as=off&as-show=on&count=40&otracker=start";

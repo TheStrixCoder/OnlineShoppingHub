@@ -20,9 +20,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-/**
- * Created by vicky on 17/2/18.
- */
+
 
 public class FlipkartFragment extends Fragment {
     private FloatingActionButton floatingActionButtonFK;

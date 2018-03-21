@@ -44,9 +44,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-/**
- * Created by vicky on 4/10/17.
- */
+
 
 public class CaptureAndFind extends Fragment{
     public VisionServiceClient visionServiceClient= new VisionServiceRestClient("7b40922bda1a4635b9697dfb4dbf5daa","https://westcentralus.api.cognitive.microsoft.com/vision/v1.0");

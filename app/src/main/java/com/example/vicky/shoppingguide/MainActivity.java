@@ -167,6 +167,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment=new WishList();
                 break;
 
+            case R.id.speechtext:
+                fragment=new BlankFragment();
+                break;
+
         }
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_main, fragment);

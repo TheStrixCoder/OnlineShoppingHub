@@ -21,10 +21,6 @@ import io.github.ponnamkarthik.richlinkpreview.RichLinkView;
 import io.github.ponnamkarthik.richlinkpreview.RichLinkViewTelegram;
 import io.github.ponnamkarthik.richlinkpreview.ViewListener;
 
-/**
- * Created by vicky on 2/3/18.
- */
-
 public class URLAdapter extends BaseAdapter {
     //RichLinkView richLinkView;
     Context context;
@@ -71,6 +67,7 @@ public class URLAdapter extends BaseAdapter {
     public static class ViewHolder{
         RichLinkView richLinkView;
         Button buttonGo,buttonDelete;
+
     }
 
 

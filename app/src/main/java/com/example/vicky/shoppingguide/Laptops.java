@@ -12,9 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-/**
- * Created by Soham on 13/10/17.
- */
 
 public class Laptops extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 

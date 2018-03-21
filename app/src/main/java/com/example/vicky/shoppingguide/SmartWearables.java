@@ -12,9 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-/**
- * Created by vicky on 6/10/17.
- */
 
 public class SmartWearables extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 

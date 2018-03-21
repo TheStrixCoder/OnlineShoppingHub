@@ -1,8 +1,6 @@
 package com.example.vicky.shoppingguide;
 
-/**
- * Created by vicky on 2/3/18.
- */
+
 
 public class URL {
     String url;
