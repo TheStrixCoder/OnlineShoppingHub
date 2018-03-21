@@ -36,18 +36,30 @@ public class Categories extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(gridViewString[position]=="Mobiles")
-                    startActivity(new Intent(getContext(),Mobiles.class));
-                if(gridViewString[position]=="Mobile Accesories")
-                    startActivity(new Intent(getContext(),MobileAccesories.class));
-                if(gridViewString[position]=="Smart Wearables")
-                    startActivity(new Intent(getContext(),SmartWearables.class));
-                if(gridViewString[position]=="Laptops")
-                    startActivity(new Intent(getContext(),Laptops.class));
-                if(gridViewString[position]=="Computer Accesories")
-                    startActivity(new Intent(getContext(),ComputerAccesories.class));
-                if(gridViewString[position]=="Cameras")
-                    startActivity(new Intent(getContext(),Camera.class));
+                if(gridViewString[position]=="Mobiles") {
+                    startActivity(new Intent(getContext(), Mobiles.class));
+                    getActivity().finish();
+                }
+                if(gridViewString[position]=="Mobile Accesories") {
+                    startActivity(new Intent(getContext(), MobileAccesories.class));
+                    getActivity().finish();
+                }
+                if(gridViewString[position]=="Smart Wearables") {
+                    startActivity(new Intent(getContext(), SmartWearables.class));
+                    getActivity().finish();
+                }
+                if(gridViewString[position]=="Laptops") {
+                    startActivity(new Intent(getContext(), Laptops.class));
+                    getActivity().finish();
+                }
+                if(gridViewString[position]=="Computer Accesories") {
+                    startActivity(new Intent(getContext(), ComputerAccesories.class));
+                    getActivity().finish();
+                }
+                if(gridViewString[position]=="Cameras") {
+                    startActivity(new Intent(getContext(), Camera.class));
+                    getActivity().finish();
+                }
             }
         });
 

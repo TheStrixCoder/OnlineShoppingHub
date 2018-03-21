@@ -149,14 +149,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch(id){
             case R.id.categories:
                 fragment = new Categories();
+
                 break;
+
 
             case R.id.clickImage:
                 fragment = new CaptureAndFind();
                 break;
-            case R.id.feedback:
-                fragment = new FeedBack();
-                break;
+          //  case R.id.feedback:
+            //    fragment = new FeedBack();
+             //   break;
             case R.id.clickText:
                 fragment=new CaptureAndFindText();
                 break;
@@ -167,9 +169,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment=new WishList();
                 break;
 
-            case R.id.speechtext:
-                fragment=new BlankFragment();
-                break;
+           // case R.id.speechtext:
+             //   fragment=new BlankFragment();
+               // break;
 
         }
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

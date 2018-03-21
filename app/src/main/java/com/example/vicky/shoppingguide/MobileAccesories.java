@@ -143,7 +143,7 @@ public class MobileAccesories extends AppCompatActivity implements AdapterView.O
     @Override
     public void onBackPressed() {
 
-        Intent i=new Intent(MobileAccesories.this,Electronics.class);
+        Intent i=new Intent(MobileAccesories.this,MainActivity.class);
         startActivity(i);
         finish();
     }

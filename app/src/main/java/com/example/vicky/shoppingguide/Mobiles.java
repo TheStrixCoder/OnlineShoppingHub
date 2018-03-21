@@ -221,7 +221,7 @@ public class Mobiles extends AppCompatActivity implements AdapterView.OnItemSele
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i=new Intent(Mobiles.this,Electronics.class);
+        Intent i=new Intent(Mobiles.this,MainActivity.class);
         startActivity(i);
         finish();
     }

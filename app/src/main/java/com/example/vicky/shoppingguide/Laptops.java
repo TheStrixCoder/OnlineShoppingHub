@@ -312,7 +312,7 @@ public class Laptops extends AppCompatActivity implements AdapterView.OnItemSele
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i=new Intent(Laptops.this,Electronics.class);
+        Intent i=new Intent(Laptops.this,MainActivity.class);
         startActivity(i);
         finish();
     }

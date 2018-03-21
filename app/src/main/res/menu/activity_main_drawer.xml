@@ -15,10 +15,10 @@
             android:icon="@drawable/camera_text"
             android:title="Click and Shop! (from text)" />
 
-        <item
-             android:id="@+id/speechtext"
-            android:icon="@drawable/women"
-            android:title="Speak and Shop!"/>
+        <!--<item-->
+             <!--android:id="@+id/speechtext"-->
+            <!--android:icon="@drawable/women"-->
+            <!--android:title="Speak and Shop!"/>-->
 
         <item
             android:id="@+id/wishlist"
@@ -30,10 +30,7 @@
 
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/feedback"
-                android:icon="@drawable/feedback"
-                android:title="Feedback" />
+
             <item
                 android:id="@+id/contact_us"
                 android:icon="@drawable/contact"

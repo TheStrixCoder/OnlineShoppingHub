@@ -170,7 +170,7 @@ public class ComputerAccesories extends AppCompatActivity implements AdapterView
 
     @Override
     public void onBackPressed(){
-        Intent i= new Intent(ComputerAccesories.this,Electronics.class);
+        Intent i= new Intent(ComputerAccesories.this,MainActivity.class);
         startActivity(i);
         finish();
     }

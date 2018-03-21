@@ -199,7 +199,7 @@ public class SmartWearables extends AppCompatActivity implements AdapterView.OnI
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i=new Intent(SmartWearables.this,Electronics.class);
+        Intent i=new Intent(SmartWearables.this,MainActivity.class);
         startActivity(i);
         finish();
     }

@@ -233,7 +233,7 @@ public class Camera extends AppCompatActivity implements AdapterView.OnItemSelec
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i=new Intent(Camera.this,Electronics.class);
+        Intent i=new Intent(Camera.this,MainActivity.class);
         startActivity(i);
         finish();
     }
