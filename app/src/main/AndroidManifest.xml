@@ -41,6 +41,7 @@
         <activity android:name=".SmartWearables" />
         <activity android:name=".ComputerAccesories" />
         <activity android:name=".Speech" />
+        <activity android:name=".Camera"/>
     </application>
 
 </manifest>

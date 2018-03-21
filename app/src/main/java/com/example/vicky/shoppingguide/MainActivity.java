@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         sharedpreferences=getSharedPreferences(mypreference,0);
         name=sharedpreferences.getString(namekey,"User");
         output="Hey "+name+"!";
-        Toast.makeText(this,output,Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,output,Toast.LENGTH_LONG).show();
 
 
         //textView.setText(output);
